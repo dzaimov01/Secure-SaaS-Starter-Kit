@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:tc:postgresql:16:///testdb
+    username: test
+    password: test
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+
+app:
+  security:
+    jwt:
+      issuer: test-issuer
+      access-token-ttl: PT5M
+      refresh-token-ttl: PT1H
+      signing-key: test-signing-key-test-signing-key-test
+    lockout:
+      max-attempts: 3
+      duration: PT5M
+  rate-limit:
+    enabled: false

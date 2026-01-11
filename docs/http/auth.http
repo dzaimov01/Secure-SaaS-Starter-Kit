@@ -1,0 +1,68 @@
+### Register
+POST http://localhost:8080/auth/register
+Content-Type: application/json
+
+{
+  "email": "owner@example.com",
+  "password": "SuperSecurePass123!",
+  "workspaceName": "Acme"
+}
+
+### Login
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "owner@example.com",
+  "password": "SuperSecurePass123!"
+}
+
+### Refresh
+POST http://localhost:8080/auth/refresh
+Content-Type: application/json
+
+{
+  "refreshToken": "<refresh-token>"
+}
+
+### List Workspaces
+GET http://localhost:8080/workspaces
+Authorization: Bearer <access-token>
+
+### Create Project
+POST http://localhost:8080/projects?workspaceId=<workspace-id>
+Authorization: Bearer <access-token>
+Content-Type: application/json
+
+{
+  "name": "Demo",
+  "description": "Project description"
+}
+
+### Create API Key
+POST http://localhost:8080/api-keys?workspaceId=<workspace-id>
+Authorization: Bearer <access-token>
+Content-Type: application/json
+
+{
+  "name": "Server integration"
+}
+
+### Invite User
+POST http://localhost:8080/invitations?workspaceId=<workspace-id>
+Authorization: Bearer <access-token>
+Content-Type: application/json
+
+{
+  "email": "teammate@example.com",
+  "role": "MEMBER"
+}
+
+### Accept Invitation
+POST http://localhost:8080/invitations/accept
+Content-Type: application/json
+
+{
+  "token": "<invite-token>",
+  "email": "teammate@example.com"
+}

@@ -1,0 +1,16 @@
+# Suggested Commit History
+
+1. "init: bootstrap spring boot project structure"
+2. "config: add application properties and env template"
+3. "db: add flyway migrations for core tables"
+4. "security: add jwt auth and password hashing"
+5. "security: add refresh token rotation and lockout"
+6. "security: add api key auth"
+7. "auth: add auth endpoints and DTOs"
+8. "workspaces: add workspace use-cases and endpoints"
+9. "projects: add project CRUD with authorization"
+10. "invitations: add invite flow"
+11. "audit: add audit logging filter"
+12. "rate-limit: add in-memory limiter and redis option"
+13. "docs: add architecture, threat model, roadmap"
+14. "ci: add github actions workflow"
