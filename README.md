@@ -83,7 +83,7 @@ We offer:
 - Cloud migration (AWS/GCP/Azure)
 - Threat modeling + penetration testing
 
-Contact: hello@example.com
+Contact: [Book a Call](https://calendly.com/dzaimov-nexuvault/strategic-business-systems-call)
 
 ## Docs
 - `docs/ARCHITECTURE.md`
