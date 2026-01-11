@@ -17,7 +17,7 @@
 - [ ] Avoid logging PII and tokens
 
 ## CSRF
-- [ ] APIs are stateless; CSRF is disabled by default. Enable if serving browser sessions.
+- [ ] CSRF tokens are enabled for browser sessions; API routes are excluded by default.
 
 ## Monitoring
 - [ ] Export audit logs to SIEM

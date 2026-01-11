@@ -59,6 +59,7 @@ Key flows:
 - Audit logging with requestId, actor, IP, userAgent
 - Rate limiting per-IP + per-user (auth + API)
 - Security headers (CSP, HSTS, X-Content-Type-Options)
+- CSRF tokens for browser sessions (API routes excluded)
 - Input validation + safe error responses
 - Secrets via env vars and `.env.example`
 
